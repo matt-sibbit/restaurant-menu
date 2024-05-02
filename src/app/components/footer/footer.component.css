@@ -1,0 +1,19 @@
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .names-container {
+    display: flex;
+    justify-content: space-around; /* evenly space  */
+    align-items: center;
+  }
+  
+  .names-container p {
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
