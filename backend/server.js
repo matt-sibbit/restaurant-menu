@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -8,9 +10,12 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// connect to MongoDB
-const dbUri = "";
-mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
+// connect to MongoDB - atlas - need .env file in backend root
+const dbUri = process.env.MONGODB_URI;
+mongoose.connect(dbUri, { 
+    useNewUrlParser: true, 
+    useUnifiedTopology: true 
+  })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
