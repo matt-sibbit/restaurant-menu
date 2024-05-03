@@ -1,1 +1,22 @@
-<p>menu works!</p>
+<h1>Food</h1>
+<div class="menu">
+    <div *ngFor="let item of tempMenuItems" class="card">
+      <img [src]="item.image" alt="{{item.title}}">
+      <div class="details">
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+        <p class="price">{{item.price}}</p>
+      </div>
+    </div>
+</div>
+<h1>Drinks</h1>
+<div class="menu">
+    <div *ngFor="let item of tempDrinkItems" class="card">
+      <img [src]="item.image" alt="{{item.title}}">
+      <div class="details">
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+        <p class="price">{{item.price}}</p>
+      </div>
+    </div>
+</div>
