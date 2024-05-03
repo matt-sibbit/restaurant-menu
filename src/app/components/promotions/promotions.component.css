@@ -1,0 +1,39 @@
+.promotions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.promotion-card {
+  width: 500px; /* Adjust width as necessary */
+  margin: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.promotion-card:hover {
+  transform: scale(1.05);
+}
+
+mat-card-header {
+  background-color: #f8f9fa;
+}
+
+mat-card-title {
+  font-size: 1.2em;
+  color: #333;
+}
+
+mat-card-subtitle {
+  font-size: 1em;
+  color: #666;
+}
+
+mat-card-content {
+  font-size: 1.2em;
+}
+
+.promo-dates {
+  font-style: italic;
+  color: #ff6347; /* A red color for emphasis */
+}
