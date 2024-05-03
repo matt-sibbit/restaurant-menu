@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PromotionsService } from '../../services/promotions.service';
 
 @Component({
   selector: 'app-promotions',
@@ -6,7 +7,22 @@ import { Component } from '@angular/core';
   styleUrl: './promotions.component.css',
 })
 export class PromotionsComponent {
-  promotions = [
+  promotions = [];
+
+  constructor(private promotionsService: PromotionsService) {}
+
+  ngOnInit() {
+    this.promotionsService.getPromotions().subscribe(
+      (data) => {
+        this.promotions = data;
+      },
+      (error) => {
+        console.error('Failed to fetch promotions:', error);
+      }
+    );
+  }
+
+  /*promotions = [
     {
       title: 'Summer Special',
       description: 'Get 20% off on all desserts!',
@@ -66,5 +82,5 @@ export class PromotionsComponent {
       start: 'June 10, 2024',
       end: 'August 31, 2024',
     },
-  ];
+  ];*/
 }
