@@ -45,3 +45,6 @@ Thumbs.db
 # env variables - mongodb connection string
 .env
 backend/.env
+
+# backend
+backend/assets
