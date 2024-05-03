@@ -5,26 +5,26 @@ h1 {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Space between cards */
-    padding: 20px; /* Padding around the whole menu */
+    gap: 20px; 
+    padding: 20px; 
 }
 
 .card {
     display: flex;
-    width: 48%; /* Slightly less than half to account for the gap */
-    background: #f9f9f9; /* Light background for the card */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    flex-direction: column;
+    width: 100%;
+    background: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .card img {
-    width: 50%;
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures the image covers the area */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .details {
     padding: 10px;
-    width: 50%; 
 }
 
 .details h2 {
@@ -34,5 +34,21 @@ h1 {
 .price {
     color: green;
     font-weight: bold;
+}
+
+ 
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row; 
+        width: 48%;
+    }
+
+    .card img {
+        width: 50%;
+    }
+
+    .details {
+        width: 50%;
+    }
 }
   
