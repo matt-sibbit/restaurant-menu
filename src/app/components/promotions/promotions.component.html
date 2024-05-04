@@ -1,13 +1,16 @@
 <div class="promotions-container">
-  <mat-card *ngFor="let promo of promotions" class="promotion-card">
+  <mat-card *ngFor="let item of promotionItems" class="promotion-card">
     <mat-card-header>
-      <mat-card-title>{{ promo.title }}</mat-card-title>
-      <mat-card-subtitle>{{ promo.price }}</mat-card-subtitle>
+      <mat-card-title>{{ item.name }}</mat-card-title>
+      <mat-card-subtitle>{{ item.price }}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="promo.image" alt="{{ promo.title }}" />
+    <img
+      [src]="item._id ? getImageUrl('promotion', item._id) : ''"
+      alt="{{ item.description }}"
+    />
     <mat-card-content>
-      <p class="promo-description">{{ promo.description }}</p>
-      <p class="promo-dates">Valid from {{ promo.start }} to {{ promo.end }}</p>
+      <p class="promo-description">{{ item.description }}</p>
+      <p class="promo-dates">Valid from {{ item.start }} to {{ item.end }}</p>
     </mat-card-content>
   </mat-card>
 </div>
