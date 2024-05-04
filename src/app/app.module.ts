@@ -13,6 +13,7 @@ import { EventsComponent } from './components/events/events.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { Subscription } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     AppRoutingModule,
     MatCardModule,
     MatButtonModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
