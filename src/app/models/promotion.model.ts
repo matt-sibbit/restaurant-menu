@@ -1,9 +1,9 @@
 export interface Promotion {
-    _id?: string;
-    title: string;
-    description: string;
-    start: Date;
-    end: Date;
-    price: number;
-    imageUrl?: string;
+  _id?: string;
+  name: string;
+  description: string;
+  start: Date;
+  end: Date;
+  price: number;
+  imageUrl?: string;
 }
