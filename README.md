@@ -1,5 +1,11 @@
 # RestaurantMenu
 
+This is the final project for Ethan Mick, Aidan Puricelli, Spencer Berger, and Matt Sibbit in Web Dev 2.  
+Al of the relevant code is included, and of note is the inclusion of the video documentation and written  
+documentation within this folder. There are a few parts for the video documentation, as you can see. All  
+videos comprise our groups complete video explanation of the project, and the documentation pdf covers  
+everything in detail.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
 
 ## Development server
