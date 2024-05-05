@@ -9,7 +9,7 @@ everything in detail.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
 
 ## Youtube Video Presentation Link
-https://youtu.be/eWyM9hmh5Zo
+https://youtu.be/mG9xRamOudM
 
 ## .env
 MUST CREATE .env FILE WITH GIVEN ADDRESS WITHIN BACKEND FOLDER: DB_URI='mongodb+srv://ethanmick741:2DCuVGmZ0xyL7qUy@web-dev-2.07r753s.mongodb.net/restaurant_menu?retryWrites=true&w=majority&appName=web-dev-2'
